@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi Step Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form">
+    <div class="step active">
+      <h3>Step 1</h3>
+      <input placeholder="Name">
+      <button onclick="next()">Next</button>
+    </div>
+
+    <div class="step">
+      <h3>Step 2</h3>
+      <input placeholder="Email">
+      <button onclick="prev()">Back</button>
+      <button onclick="next()">Next</button>
+    </div>
+
+    <div class="step">
+      <h3>Step 3</h3>
+      <p>Done ✔</p>
+      <button onclick="prev()">Back</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
